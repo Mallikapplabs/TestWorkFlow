@@ -1,7 +1,7 @@
 name: Receiver 
 on:
   repository_dispatch:
-    types: [some_event]
+    types: [test_result]
  
 jobs:
   receiver:
