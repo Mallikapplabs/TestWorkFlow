@@ -1,8 +1,6 @@
 name: Receiver 
 on:
   repository_dispatch:
-    types: [test_result]
- 
 jobs:
   receiver:
     runs-on: ubuntu-latest
