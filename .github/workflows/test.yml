@@ -1,8 +1,13 @@
-name: TestWorkFlow
-on: repository_dispatch
+name: Receiver
+ 
+on:
+  repository_dispatch:
+    types: [some_event]
+ 
 jobs:
-  build:
+  receiver:
     runs-on: ubuntu-latest
     steps:
-      - name: Build with Maven 
-        run: "echo Done Test"
+      - name: A event received
+        run: |
+          echo "payload Foo '${{ github.event.client_payload.foo }}'"
