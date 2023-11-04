@@ -1,6 +1,7 @@
 name: Receiver 
 on:
   repository_dispatch:
+    types: [build_application]
 jobs:
   receiver:
     runs-on: ubuntu-latest
