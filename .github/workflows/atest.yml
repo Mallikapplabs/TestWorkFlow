@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: A event received
         run: |
-          echo "payload Foo '${{ github.event.client_payload.foo }}'"
+          echo "payload Foo '${{github.event.client_payload.foo}}'"
