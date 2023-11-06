@@ -2,6 +2,7 @@ name: Receiver
 on:
   repository_dispatch:
     types: [build_application]
+  workflow_dispatch:
 jobs:
   receiver:
     runs-on: ubuntu-latest
